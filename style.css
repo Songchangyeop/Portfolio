@@ -160,14 +160,27 @@ p {
   border-radius: 4px;
 }
 
+.home__contact:hover {
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-pink);
+  border-radius: 4px;
+}
+
 /* Section common */
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1000px;
   margin: auto;
 }
 
+.section__container {
+  max-width: 1000px;
+}
 /* About */
 .about__majors {
   display: flex;
@@ -206,6 +219,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin: 10px 0;
 }
 .job__description {
   margin: 0 16px;
@@ -223,4 +237,57 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+#skill {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  margin: 20px 0;
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+}
+
+.skillset_title {
+  color: var(--color-white);
+}
+
+.skillset_left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
