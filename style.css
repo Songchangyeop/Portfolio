@@ -531,6 +531,7 @@ p {
 
   .about__majors {
     flex-direction: column;
+    align-items: center;
   }
 
   .major {
@@ -547,5 +548,9 @@ p {
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+
+  .contact__email {
+    font-size: var(--font-regular);
   }
 }
