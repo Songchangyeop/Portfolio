@@ -22,184 +22,97 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <div class="navbar__logo">
-        <a href="#">💻 Song's Portfolio</a>
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="#">💻 Song's Portfolio</a>
+        </div>
+
+        <div class="navbar__link">
+          <a href="" style="color: #099268">이력서 보기 📝</a>
+        </div>
       </div>
-
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skill">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
-          Testimonial
-        </li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
-
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
     </nav>
 
     <!-- Home -->
     <section id="home">
       <div class="home__container">
-        <img
-          src="imgs/Song.png"
-          alt="Yeop's profile photo"
-          class="home__avatar"
-        />
         <h1 class="home__title">Hello, <br />I am Changyeop,song :) 🖐</h1>
         <h2 class="home__description">
           소통과 공유를 바탕으로 기본을 중요시하는 개발자가 되고자 합니다.
         </h2>
-        <button class="home__contact" data-link="#contact">Contact Me</button>
+        <button class="home__contact" data-link="#contact">
+          > Contact Me <
+        </button>
       </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section section__container">
       <h1>About me</h1>
-      <p>
-        안녕하세요 프론트엔드 개발자 송창엽입니다.<br />
-        4학년이 되어 진로를 선택하려고 마음을 먹었을 때에 문득 내가 어떤 길을
-        걸어가야 하는지에 대한 깊은 고민에 빠진 적이 있었습니다<br />
-        그 당시에 단순하게 내가 좋아하는 일이 뭔지 생각하던 찰나에 대학교 1학년
-        때 수업으로 잠깐 배웠던 HTML이 너무 즐거웠던 기억이 있어서<br />
-        더욱 웹에 관심을 가지게 되었습니다. 그 당시에는 HTML로 디자인이 가미되지
-        않은 정적인 페이지만 만들었기 때문에 다른 웹사이트들을 보며<br />
-        '나도 저런 사이트를 만들고 싶다' 라는 마음에 Front-End에 대한 공부를
-        시작했습니다.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
+      <div class="about__description">
+        <img
+          src="imgs/Song.png"
+          alt="Yeop's profile photo"
+          class="about__avatar"
+        />
+
+        <p>
+          안녕하세요 프론트엔드 개발자 송창엽입니다. 4학년이 되어 진로를 <br />
+          선택하려고 마음을 먹었을 때에 문득 내가 어떤 길을 걸어가야 하는지에
+          대한 <br />
+          깊은 고민에 빠진 적이 있었습니다 그 당시에 단순하게 내가 좋아하는 일이
+          뭔지 <br />
+          생각하던 찰나에 대학교 1학년 때 수업으로 잠깐 배웠던 HTML이 너무
+          즐거웠던 <br />
+          기억이 있어서 더욱 웹에 관심을 가지게 되었습니다. 그 당시에는 HTML로
+          <br />
+          디자인이 가미되지 않은 정적인 페이지만 만들었기 때문에 다른
+          웹사이트들을 <br />
+          보며 '나도 저런 사이트를 만들고 싶다' 라는 마음에 Front-End에 대한
+          공부를 <br />
+          시작했습니다.
+        </p>
+      </div>
+
+      <div class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <div class="skill-list">
+            <p class="skill-item">Languages</p>
+            <p>JavaScript, TypeScript, Java, C</p>
           </div>
-          <h2 class="major__title">publishing</h2>
-          <p class="major__description">html5, css3</p>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-js-square"></i>
+          <div class="skill-list">
+            <p class="skill-item">FrontEnd</p>
+            <p>
+              HTML5, CSS3, React, React-Router, React-Hooks, Redux, CSS-Module,
+              Styled-Component
+            </p>
           </div>
-          <h2 class="major__title">programming</h2>
-          <p class="major__description">Javascript(Vanilla), ES6</p>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-react"></i>
+          <div class="skill-list">
+            <p class="skill-item">Tools</p>
+            <p>Postman, Git</p>
           </div>
-          <h2 class="major__title">framework</h2>
-          <p class="major__description">React</p>
         </div>
       </div>
+
       <div class="about__schools">
         <div class="job">
           <img src="imgs/jobs/bufs.PNG" alt="bufs" class="job__logo" />
           <div class="job__description">
             <p class="job__name">부산외국어대학교 졸업</p>
+            <p class="job__period">임베디드 IT 학부</p>
             <p class="job__period">2015.03 ~ 2021.08</p>
           </div>
         </div>
-        <!-- <div class="job">
-          <img src="imgs/jobs/bufs.PNG" alt="bufs" class="job__logo" />
-          <div class="job__description">
-            <p class="job__name">부산외국어대학교 근로장학생</p>
-            <p class="job__period">2019.09 ~ 2020.07</p>
-          </div>
-        </div> -->
       </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skill" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          프론트엔드의 기본이되는 HTML5, CSS3, JavaScript를 무리 없이 사용할 수
-          있으며 리액트와 같은 프레임 워크를 공부하며 배우는 중입니다.
-        </p>
-        <div class="skillset">
-          <div class="skillset_left">
-            <h3 class="skillset_title">Skills</h3>
-            <div class="skill">
-              <div class="skill_description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill_bar">
-                <div class="skill__value" style="width: 99%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill_bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>JavaScrips</span>
-                <span>90%</span>
-              </div>
-              <div class="skill_bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>React</span>
-                <span>50%</span>
-              </div>
-              <div class="skill_bar">
-                <div class="skill__value" style="width: 50%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>TypeScript</span>
-                <span>50%</span>
-              </div>
-              <div class="skill_bar">
-                <div class="skill__value" style="width: 50%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset_title">Tools</h3>
-              <ul class="tools_list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Atom</span></li>
-                <li><span>Sublime text</span></li>
-                <li><span>DevC++</span></li>
-                <li><span>Visual Studio</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset_title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>linux</span></li>
-                <li><span>DB</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="divider"></div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>My work</h1>
-        <h3>Project</h3>
+        <h1>Project</h1>
         <h2>( 진행중 )</h2>
         <div class="work__categories">
           <button class="category__Btn selected" data-filter="*">
@@ -334,58 +247,22 @@
       </div>
     </section>
 
-    <!-- testimonials -->
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/testimonial/ggomi.png"
-              alt="pizza"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis iusto aperiam nostrum distinctio eius ea tenetur fuga?
-                Odio sunt, velit error voluptatum provident facere ea
-                repellendus recusandae quas commodi nisi.
-              </p>
-              <p class="name"><a href="">ggomi</a> / Apple</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur debitis quod praesentium eius veniam quos nemo,
-                velit modi dolore ad at maiores suscipit laboriosam saepe eos
-                sed, vel odit! Porro?
-              </p>
-              <p class="name"><a href="">Pizza</a> / Apple</p>
-            </div>
-            <img
-              src="imgs/testimonial/pizza.png"
-              alt="pizza"
-              class="testimonial__avatar"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">waitwait0301@naver.com</h2>
+      <h1 class="contact__title">Contact</h1>
+      <a
+        class="contact-url"
+        href="mailto:waitwait0301.info@gmail.com"
+        target=""
+        rel="noopener noreferrer"
+        >waitwait0301@gmail.com</a
+      >
       <div class="contact__links">
         <a href="https://github.com/Songchangyeop" target="_blank">
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <p class="contact__right"><b>2021 송창엽 - All rights reserved</b></p>
+      <p class="contact__right"><b>© 2021 Changyeop Song</b></p>
     </section>
 
     <!-- Arrow up -->
