@@ -35,7 +35,7 @@
   --size-border-radius: 4px;
 
   /* Animation */
-  --animation-duration: 300ms;
+  --animation-duration: 150ms;
 }
 
 /* Size */
@@ -216,10 +216,17 @@ p {
   margin-top: 3em;
 }
 
-.divider {
+.divider-vertical {
   background: var(--color-green);
   width: 2px;
   height: 8rem;
+  margin-top: 2rem;
+}
+
+.divider-horizontal {
+  background: var(--color-green);
+  width: 5em;
+  height: 2px;
   margin-top: 2rem;
 }
 
@@ -255,12 +262,13 @@ p {
   flex-direction: column;
   width: 800px;
   max-width: 800px;
+  margin-bottom: 4em;
+  margin-top: 4em;
   /* border: 1px solid var(--color-light-grey); */
 }
 
 .project {
   display: flex;
-
   margin-top: 3em;
 }
 
@@ -278,18 +286,31 @@ p {
   padding-bottom: 5px;
 }
 
-.description__link {
-  font-size: var(--font-micro);
-  margin-left: 1em;
-  padding-top: 1em;
-}
-
 .description__list:before {
   content: '•';
   color: var(--color-deep-green);
   display: inline-block;
   width: 1.3em;
   margin-left: 1em;
+}
+
+.description__list-stack {
+  color: var(--color-light-grey);
+  padding-bottom: 5px;
+  margin-left: 1em;
+}
+
+.description__list-stack:before {
+  content: '•';
+  color: var(--color-deep-green);
+  display: inline-block;
+  width: 1.3em;
+}
+
+.description__link {
+  font-size: var(--font-micro);
+  margin-left: 1em;
+  padding-top: 1em;
 }
 
 .project__header {
@@ -322,14 +343,28 @@ p {
 }
 
 .contact__links {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
   font-size: var(--font-large);
   margin: 24px 0;
 }
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: var(--color-green);
   transition: all var(--animation-duration) ease-in;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link__header {
+  font-size: 0.5em;
 }
 
 /* Scroll */
@@ -337,12 +372,12 @@ p {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 70px;
-  height: 70px;
-  font-size: 50px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   color: var(--color-white);
   background-color: var(--color-green);
-  border-radius: 50%;
+  border-radius: 1em;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in;
