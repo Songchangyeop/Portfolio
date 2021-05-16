@@ -7,7 +7,7 @@
 
 </br>
 
-<img src="imgs/portfolio.png" width="500">
+<img src="imgs/portfolio.png" width="450">
 
 </br>
 </br>
