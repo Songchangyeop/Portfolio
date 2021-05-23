@@ -419,16 +419,8 @@ p {
     align-items: center;
   }
 
-  .major {
-    margin-bottom: 30px;
-  }
-
-  .skillset {
-    flex-direction: column;
-  }
-
-  .category__Btn {
-    margin: 4px 0;
+  .skills {
+    margin-top: 3em;
   }
 
   .project {
